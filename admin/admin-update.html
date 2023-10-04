@@ -148,7 +148,113 @@
             
 			<!-- content -->
             <div class="content">
-                
+                <section class="content-detail">
+                    <div class="center-ct">
+                        <!-- aside -->
+                        <aside class="aside">
+                            <h1 class="not-view">aside</h1>
+                            
+                            <div class="aside-tit">관리자</div>
+                            <ul class="aside-list cf">
+                                <li class="on">
+                                    <a href="admin-list.html">관리자관리</a>
+                                </li>
+                                <li>
+                                    <a href="user-list.html">사용자관리</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        
+                        <!-- 관리자 오른쪽 내용 -->
+                        <div class="admin-right-area">
+                            <!-- 관리자 제목 -->
+                            <div class="admin-tit">관리자 수정</div>
+                            
+                            <!-- 관리자 상세 -->
+                            <div class="admin-detail-area">
+                                <div class="content-table-area">
+                                    <table class="content-table">
+                                        <colgroup>
+                                            <col width="14%">
+                                            <col width="36%">
+                                            <col width="14%">
+                                            <col width="36%">
+                                        </colgroup>
+                                        <tbody>
+                                            <!-- 관리자 추가 START -->
+                                            <tr>
+                                                <th>아이디*</th>
+                                                <td colspan="3">
+                                                    <!-- duplicate-id-area : 아이디 입력폼 + 중복확인 버튼일 경우 -->
+                                                    <div class="duplicate-id-area">
+                                                        <input type="text" name="" id="" class="content-text" placeholder="6~12자 이내 영문,숫자만 가능">
+                                                        <button type="button" class="content-btn content-btn-type2" onclick="">중복확인</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>비밀번호*</th>
+                                                <td><input type="password" name="" id="" class="content-text" placeholder="8~20자 이내 영문,숫자만 가능"></td>
+                                                <th>비밀번호 확인*</th>
+                                                <td><input type="password" name="" id="" class="content-text" placeholder="8~20자 이내 영문,숫자만 가능"></td>
+                                            </tr>
+                                            <!-- 관리자 추가 END -->
+                                            <!-- 관리자 수정 START -->
+                                            <tr>
+                                                <th>아이디*</th>
+                                                <td><div class="content-only-text">admin1</div></td>
+                                                <th>비밀번호*</th>
+                                                <td>
+                                                    <input type="password" name="" id="" class="content-text">
+                                                    <div class="content-checkbox">
+                                                        <input type="checkbox" name="change_password" id="change_password" onclick="setChangePassword(this);">
+                                                        <label for="change_password">비밀번호 변경</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- change-password-area : 비밀번호 변경 체크시 보이는 폼 -->
+                                            <tr class="change-password-area">
+                                                <th>새비밀번호*</th>
+                                                <td><input type="password" name="" id="" class="content-text" placeholder="8~20자 이내 영문,숫자만 가능"></td>
+                                                <th>새비밀번호 확인*</th>
+                                                <td><input type="password" name="" id="" class="content-text" placeholder="8~20자 이내 영문,숫자만 가능"></td>
+                                            </tr>
+                                            <!-- 관리자 수정 END -->
+                                            <tr>
+                                                <th>이름*</th>
+                                                <td><input type="text" name="" id="" class="content-text"></td>
+                                                <th>연락처*</th>
+                                                <td>
+                                                    <!-- only-number : 숫자만 입력할 경우 -->
+                                                    <input type="text" name="" id="" class="content-text only-number">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일</th>
+                                                <td colspan="3"><input type="email" name="" id="" class="content-text"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>권한*</th>
+                                                <td colspan="3">
+                                                    <select name="" id="" class="content-select">
+                                                        <option value="최고관리자">최고관리자</option>
+                                                        <option value="일반관리자">일반관리자</option>
+                                                        <option value="기타관리자">기타관리자</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="content-btn-area">
+                                    <button type="button" class="content-btn content-btn-type1" onclick="">확인</button>
+                                    <button type="button" class="content-btn content-btn-type2" onclick="history.back();">취소</button>
+                                    <button type="button" class="content-btn content-btn-type3" onclick="">삭제</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             
             <!-- footer -->

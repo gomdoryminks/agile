@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>애자일</title>
+		<meta name="description" content="애자일">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo-favicon.ico">
+		
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/swiper.min.css" type="text/css" rel="stylesheet">
+        <link href="../css/slick.css" type="text/css" rel="stylesheet">
+        <link href="../css/slick-theme.css" type="text/css" rel="stylesheet">
+        <link href="../css/jquery-ui.min.css" type="text/css" rel="stylesheet">
+        <link href="../css/jquery-ui-timepicker-addon.css" type="text/css" rel="stylesheet">
+        <link href="../css/fullcalendar-main.css" type="text/css" rel="stylesheet">
+        <link href="../css/admin-common.css" type="text/css" rel="stylesheet">
+		<link href="../css/admin-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../js/swiper.min.js"></script>
+        <script src="../js/slick.js"></script>
+        <script src="../js/jquery-ui.min.js"></script>
+        <script src="../js/jquery-ui-sortable.js"></script>
+        <script src="../js/jquery-ui-timepicker-addon.js"></script>
+		<script src="../js/datepicker-ko.js"></script>
+        <script src="../js/fullcalendar-main.js"></script>
+        <script src="../js/locales-ko.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/tippy-bundle.umd.min.js"></script>
+        <script src="../js/admin-function.js"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+            <!-- header -->
+		    <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-top">
+                    <div class="center-ct cf">
+                        <ul class="header-top-menu cf">
+                            <li>
+                                <a href="#" class="not-pointer">관리자님</a>
+                            </li>
+                            <li>
+                                <a href="admin-update.html">계정관리</a>
+                            </li>
+                            <li>
+                                <a href="login.html">로그아웃</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="header-main">
+                    <div class="center-ct cf">
+                        <div class="header-main-logo">
+                            <a href="index.html"><img src="../img/logo.png" alt="로고"></a>
+                        </div>
+
+                        <!-- nav -->
+                        <nav class="nav">
+                            <h2 class="not-view">nav</h2>
+
+                            <ul class="nav-menu cf">
+                                <li>
+                                    <p class="nav-menu-tit">관리자</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="admin-list.html">관리자관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="user-list.html">사용자관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">마켓정보</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="market-update.html">마켓정보</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">공통코드</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="code-list.html">공통코드</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">상품관리</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="goods-list.html">상품관리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">주문수집</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="order-list.html">주문수집</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">공지사항</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="notice-list.html">공지사항</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="nav-menu-tit">게시판</p>
+                                    <ul class="nav-sub-menu cf">
+                                        <li>
+                                            <a href="board-list.html">게시판</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            
+			<!-- content -->
+            <div class="content">
+                <section class="content-list">
+                    <div class="center-ct">
+                        <!-- aside -->
+                        <aside class="aside">
+                            <h1 class="not-view">aside</h1>
+                            
+                            <div class="aside-tit">상품관리</div>
+                            <ul class="aside-list cf">
+                                <li class="on">
+                                    <a href="goods-list.html">상품관리</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        
+                        <!-- 관리자 오른쪽 내용 -->
+                        <div class="admin-right-area">
+                            <!-- 관리자 제목 -->
+                            <div class="admin-tit">상품 목록</div>
+                            
+                            <!-- 관리자 검색 -->
+                            <form id="" name="" method="" action="">
+                                <div class="admin-search-area">
+                                    <div class="admin-search-item">
+                                        <div class="tit">등록일자</div>
+                                        <div class="con">
+                                            <input type="text" name="" class="content-text content-date-text" autocomplete="off">
+                                            <span class="separate">~</span>
+                                            <input type="text" name="" class="content-text content-date-text" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="admin-search-item">
+                                        <div class="tit">검색</div>
+                                        <div class="con">
+                                            <input type="text" name="" class="content-text" placeholder="상품명을 입력하세요">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-btn-area">
+                                    <button type="button" class="content-btn content-btn-type2" onclick="">검색</button>
+                                </div>
+                            </form>
+                            
+                            <!-- 관리자 리스트 -->
+                            <div class="admin-list-area">
+                                <div class="content-table-top">총 <span>5</span> 개의 결과가 검색되었습니다.</div>
+                                <div class="content-table-area">
+                                    <table class="content-table list-table">
+                                        <colgroup>
+                                            <col width="10%">
+                                            <col width="*">
+                                            <col width="*">
+                                            <col width="*">
+                                            <col width="*">
+                                            <col width="*">
+                                            <col width="*">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>번호</th>
+                                                <th>상품명</th>
+                                                <th>필드1</th>
+                                                <th>필드2</th>
+                                                <th>필드3</th>
+                                                <th>필드4</th>
+                                                <th>필드5</th>
+                                                <th>필드6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><a href="goods-update.html">상품명5</a></td>
+                                                <td>필드1</td>
+                                                <td>필드2</td>
+                                                <td>필드3</td>
+                                                <td>필드4</td>
+                                                <td>필드5</td>
+                                                <td>필드6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><a href="goods-update.html">상품명4</a></td>
+                                                <td>필드1</td>
+                                                <td>필드2</td>
+                                                <td>필드3</td>
+                                                <td>필드4</td>
+                                                <td>필드5</td>
+                                                <td>필드6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><a href="goods-update.html">상품명3</a></td>
+                                                <td>필드1</td>
+                                                <td>필드2</td>
+                                                <td>필드3</td>
+                                                <td>필드4</td>
+                                                <td>필드5</td>
+                                                <td>필드6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><a href="goods-update.html">상품명2</a></td>
+                                                <td>필드1</td>
+                                                <td>필드2</td>
+                                                <td>필드3</td>
+                                                <td>필드4</td>
+                                                <td>필드5</td>
+                                                <td>필드6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="goods-update.html">상품명1</a></td>
+                                                <td>필드1</td>
+                                                <td>필드2</td>
+                                                <td>필드3</td>
+                                                <td>필드4</td>
+                                                <td>필드5</td>
+                                                <td>필드6</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="content-paging-area">
+                                    <ul class="content-paging cf">
+                                        <li>
+                                            <a href="#" class="page first"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page prev"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page active">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page next"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="page last"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content-btn-area">
+                                    <button type="button" class="content-btn content-btn-type1" onclick="location.href='goods-update.html';">추가</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- footer -->
+			<footer class="footer">
+				<h1 class="not-view">footer</h1>
+                
+                <div class="center-ct cf">
+                    <div class="footer-txt">AGILE 2023. All copyrights reserved.</div>
+                </div>
+			</footer>
+            
+            <!-- back to top -->
+            <div class="back-to-top"></div>
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="layer-wrap" id="default-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-title">
+                        <div class="layer-title-txt"></div>
+                        <button type="button" class="layer-title-btn close-btn" onclick="closeLayer(this);"><img src="../img/pop_close.png" alt="레이어닫기"></button>
+                    </div>
+                    <div class="layer-content"></div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
